@@ -1,37 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="./CalculadoraInteractica.css">
 </head>
-<body>
-    <h1>Proyecto Final</h1>
-    <h2>Elaborado por: Chavarría Contreras Leopoldo Misael</h2>
-    <div class="princi">
-        <div id="res"></div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div id="cinco">5</div>
-        <div id="seis">6</div>
-        <div id="siete">7</div>
-        <div id="ocho">8</div>
-        <div id="nueve">9</div>
-        <div id="cero">0</div>
-        <div id="ac">AC</div>
-        <div id="porcentaje">%</div>
-        <div id="div">/</div>
-        <div id="mult">X</div>
-        <div id="resta">-</div>
-        <div id="suma">+</div>
-        <div id="punto">.</div>
-        <div id="igual">=</div>
-    </div>
 
-    <script src="./CalculadoraInteractica.js"> </script>
-    
+<body>
+    <div class="contenedor">
+        <h1>Proyecto final</h1>
+        <h2>Elaborado por: Chavarría Contreras Leopoldo Misael</h2>
+        <div class="calculadora">
+            <input type="text" id="pantalla" disabled>
+            <div class="botones">
+                <button onclick="agregarNumero(7)">7</button>
+                <button onclick="agregarNumero(8)">8</button>
+                <button onclick="agregarNumero(9)">9</button>
+                <button onclick="establecerOperacion('+')">+</button>
+                <button onclick="agregarNumero(4)">4</button>
+                <button onclick="agregarNumero(5)">5</button>
+                <button onclick="agregarNumero(6)">6</button>
+                <button onclick="establecerOperacion('-')">-</button>
+                <button onclick="agregarNumero(1)">1</button>
+                <button onclick="agregarNumero(2)">2</button>
+                <button onclick="agregarNumero(3)">3</button>
+                <button onclick="establecerOperacion('*')">*</button>
+                <button onclick="agregarNumero(0)">0</button>
+                <button onclick="limpiarPantalla()">C</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="establecerOperacion('/')">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="./CalculadoraInteractica.js"></script>
 </body>
+
 </html>

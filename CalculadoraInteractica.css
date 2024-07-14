@@ -1,108 +1,77 @@
-body{
-    background: rgba(0, 0, 0, 0.35);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-    padding: 0px;
+/*DANDO ESTILO A LA PÁGINA EN GENERAL*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
 }
-div {
-    background: none;
-}
-h1{
-    background: none;
-    text-align: center;
-    color: rgb(255, 187, 0);
-    text-shadow: 7px 6px 5px rgba(0, 0, 0, 0.748);
-    padding-top: 80px 
-}
-h2{
-    background: none;
-    text-align: center;
-    padding: 30px 0px;
-    text-shadow: 5px 5px 10px rgba(0,0, 0, 0.5);
-}
-.princi{
-    background: none;
-    border: 5px solid black;
-    margin-top: 6px;
-    margin-right: 30%;
-    margin-left: 30%;
-    margin-bottom: 0px;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-areas: "res      res          res            res"
-                         "ac           ac       porcentaje    div"
-                         "siete      ocho        nueve         mult"
-                        "cuatro       cinco      seis          resta"
-                         "uno        dos         tres          suma"
-                         "cero        cero       punto         igual";
-    grid-template-rows: 80px 50px 50px 50px 50px 50px;
-    text-align: center;
-    font-size: 30px;
 
+/*ALINEANDO EL CONTENIDO DEL CONTENEDOR PRINCIPAL EN EL CENTRO*/
+.contenedor {
+    text-align: center;
 }
-.princi,div{
-    background: none;
-    border:2px solid black;
-    color:white;
+
+/*DANDO ESTILO AL TÍTULO*/
+h1 {
+    margin-bottom: 50px;
+    font-size: 50px;
+    color: #202020;
+    text-shadow: 5px 5px 5px rgb(126, 126, 126);
+}
+
+/*DANDO ESTILO AL SUBTITULO*/
+h2{
+    font-size: 30px;
+    color: #202020;
+    text-shadow: 5px 5px 5px rgb(126, 126, 126);
+    margin-bottom: 50px;
+}
+
+/*DANDO ESTILOS AL CONTENEDOR DE LA CALCULADORA*/
+.calculadora {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/*DANDO ESTILOS A LA PANTALLA QUE MUESTRA LOS NÚMEROS*/
+#pantalla {
+    width: 100%;
+    height: 60px;
+    text-align: right;
+    font-size: 24px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgb(203, 202, 202);
+    border-radius: 5px;
+}
+
+/*DANDO ESTILOS A LA CLASE BOTONES*/
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/*DANDO ESTILOS A TODOS LOS BOTONES*/
+button {
+    height: 60px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(230, 227, 227);
     cursor: pointer;
 }
-.princi :nth-child(1){
-    grid-area: res;
-}
-.princi :nth-child(2){
-    grid-area: uno;
-}
-.princi :nth-child(3) {
-    grid-area: dos;
-}
-.princi :nth-child(4) {
-    grid-area: tres;
-}
-.princi :nth-child(5) {
-    grid-area: cuatro;
-}
-.princi :nth-child(6) {
-    grid-area: cinco;
-}
-.princi :nth-child(7) {
-    grid-area: seis;
-}
-.princi :nth-child(8) {
-    grid-area: siete;
-}
-.princi :nth-child(9) {
-    grid-area: ocho;
-}
-.princi :nth-child(10) {
-    grid-area: nueve;
-}
-.princi :nth-child(11) {
-    grid-area: cero;
-}
-.princi :nth-child(12) {
-    grid-area: ac;
-}
-.princi :nth-child(13) {
-    grid-area: porcentaje;
-}
-.princi :nth-child(14) {
-    grid-area: div;
-}
-.princi :nth-child(15) {
-    grid-area: mult;
-}
-.princi :nth-child(16) {
-    grid-area: resta;
-}
-.princi :nth-child(17) {
-    grid-area: suma;
-}
-.princi :nth-child(18) {
-    grid-area: punto;
-}
-.princi :nth-child(19) {
-    grid-area: igual;
-}
 
-
-
+/*DANDO ESTILO CUANDO EL MOUSE PASE POR TODOS LOS BOTONES*/
+button:hover {
+    background-color: rgb(185, 185, 185);
+}
